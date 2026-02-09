@@ -22,6 +22,6 @@ jobs:
               uses: aws-actions/amazon-ecs-deploy-task-definition@v2
               with:
                   task-definition: ${{ steps.task-def.outputs.task-definition }}
-                  service: my-service
-                  cluster: my-cluster
+                  service: aws-exam-task-def-service
+                  cluster: exam-ecs-cluster
                   wait-for-service-stability: true
